@@ -1,0 +1,233 @@
+
+body {
+	color: #2d3c49;
+	font-size: 1.30em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+/* container div */
+.container {
+	margin: 0 8% 5%;
+}
+
+/* header div and its content*/
+header {
+	display: flex;
+	width: 100%;
+}
+
+#logo {
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+#heading {
+	margin-left: auto;
+	display: inline-block;
+	text-align: right;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+#name {
+	font-weight: 100;
+}
+
+/* hr and content div */
+hr {
+	height: 2px;
+	background-color: #7d97ad;
+	margin-bottom: 30px;
+}
+
+.content {
+	display: flex;
+	width: 100%;
+}
+
+/* aside tag, about-me class */
+.about-me {
+	width: 10%;
+	margin-right: 4%;
+	text-align: center;
+}
+
+.about-me h4 {
+	color: #02b3e4;
+}
+
+.about-me img {
+	width: 100%;
+	height: auto;
+}
+
+#other-portfolios a:link {
+	text-decoration: none;
+	color: #2d3c49;
+} 
+
+#other-portfolios a:visited {
+  	text-decoration: none;
+} 
+
+#other-portfolios a:hover   {
+  	font-weight: bold;
+  	color: #7d97ad;
+} 
+
+#contact {
+	margin-top: 100px;
+}
+
+#contact img {
+	width: 50%;
+}
+
+/* main tag/class */
+.main {
+	width: 86%;
+}
+
+#main-image {
+	width: 100%;
+}
+
+/* features part */
+.features {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+}
+.features h2 {
+	color: #7d97ad;
+	font-weight: 400;
+	width: 100%;
+	margin-top: 40px;
+}
+
+.project img {
+	width: 100%;
+	height: 220px;
+}
+
+.project {
+	width: calc((100% - 28px)/3);
+	text-align: center;
+}
+
+.project-name {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 2.5vw;
+	min-size: 12px;
+	margin: 7px 0;
+}
+
+.project-link img {
+	width: 20%;
+	height: auto;
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 1080px) {
+	.container {
+		margin: 0 1%;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 760px) {
+	hr {
+		margin: 5px 0;
+	}
+	.content {
+		flex-wrap: wrap;
+	}
+	.main {
+		order: 1;
+		width: 100%;
+		border-bottom: 3px solid;
+		padding-bottom: 20px;
+		margin: 20px 0;
+	}
+	.about-me {
+		order: 2;
+		display: flex;
+		flex-wrap: nowrap;
+		width: 100%;
+		margin: 10px 0 20px;
+	}
+	.about-me h4 {
+		display: none;
+	}
+	.about-me img {
+		width: 48px;
+		height: 48px;
+	}
+	#other-portfolios {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	.portfolio-group {
+		width: 48%;
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	.portfolio-group p {
+		margin: 0;
+	}
+	
+	#contact {
+		width: 52%;
+		margin: 0;
+	}
+
+	#contact img {
+		float: right;
+		width: 48px;
+	}
+
+	.project-name {
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	
+	.content {
+		flex-wrap: wrap;
+	}
+	.main {
+		order: 1;
+		width: 100%;
+	}
+	.about-me {
+		order: 2;
+		width: 100%;
+	}
+	.about-me img {
+		width: 48px !important;
+		height: 48px;
+	}
+	.about-me p {
+		margin-top: 0;
+	}
+	.features {
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		border-bottom: 3px solid;
+	}
+	.project {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.project-name {
+		font-size: 30px;
+	}
+	.project-link img {
+		margin: 0 0 10px;
+	}
+}
+
